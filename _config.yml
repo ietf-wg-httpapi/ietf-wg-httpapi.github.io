@@ -1,0 +1,7 @@
+---
+    
+  encoding: "utf-8"
+  markdown: kramdown
+  
+  sass:
+    sass_dir: _scss
