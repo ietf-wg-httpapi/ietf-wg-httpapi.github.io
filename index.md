@@ -27,7 +27,7 @@ The group is currently working on the following specifications (in the GitHub re
 
 See also the [official document listing](https://datatracker.ietf.org/wg/httpapi/documents/).
 
-We talk about pontential future work on the mailing list and in the [discussion repo](https://github.com/ietf-wg-httpapi/discussion/discussions).
+We talk about potential future work on the mailing list and in the [discussion repo](https://github.com/ietf-wg-httpapi/discussion/discussions).
 
 
 ## Who Should Participate
