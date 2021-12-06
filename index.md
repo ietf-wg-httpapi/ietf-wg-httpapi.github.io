@@ -6,7 +6,7 @@ layout: main
 This is the home page of the [IETF](https://www.ietf.org/) Building Blocks for HTTP APIs (HTTPAPI) Working Group.
 
 {: .banner}
-Our mission is create standard technical specifications to improve use of HTTP for machine-to-machine communications, including HTTP extensions, formats, and best practices.
+Our mission is to create standard technical specifications to improve use of HTTP for machine-to-machine communications, including HTTP extensions, formats, and best practices.
 
 See our:
 
