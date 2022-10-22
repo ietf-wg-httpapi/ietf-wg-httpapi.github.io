@@ -20,6 +20,7 @@ See our:
 The group is currently working on the following specifications (in the GitHub repository indicated):
 
 * [The Deprecation HTTP Header Field](https://datatracker.ietf.org/doc/draft-ietf-httpapi-deprecation-header/) - _[repository](https://github.com/ietf-wg-httpapi/deprecation-header)_
+
 ```mermaid
 graph LR
     WG-Adopt((WG Adopt)) --draft-00-02--> WGLC
@@ -28,6 +29,8 @@ graph LR
     IETF-LC --> IESG-Review
     IESG-Review --> RFC-Editor
 ```
+
+
 * [The Idempotency-Key HTTP Header Field](https://datatracker.ietf.org/doc/draft-ietf-httpapi-idempotency-key-header/) - _[repository](https://github.com/ietf-wg-httpapi/idempotency)_
 ```mermaid
 graph LR
