@@ -31,7 +31,7 @@ graph LR
 * [The Idempotency-Key HTTP Header Field](https://datatracker.ietf.org/doc/draft-ietf-httpapi-idempotency-key-header/) - _[repository](https://github.com/ietf-wg-httpapi/idempotency)_
 ```mermaid
 graph LR
-    WG-Adopt((WG Adopt)) --> WGLC
+    WG-Adopt((WG Adopt)) --draft-00-01--> WGLC
     WGLC --> AD-Review
     AD-Review --> IETF-LC
     IETF-LC --> IESG-Review
