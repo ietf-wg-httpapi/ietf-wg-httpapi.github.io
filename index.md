@@ -17,7 +17,7 @@ See our:
 
 ## Current and Upcoming Work
 
-The group is currently working on the following specifications (in the GitHub repository indicated):
+The group is currently working on the following specifications (in the GitHub repository indicated). The step in the progress graph with a circle represents the current state of the document. :
 
 #### [Problem Details for HTTP APIs](https://datatracker.ietf.org/doc/draft-ietf-httpapi-rfc7807bis/) - _[repository](https://github.com/ietf-wg-httpapi/rfc7807bis)_
 ```mermaid
