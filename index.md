@@ -90,6 +90,7 @@ graph LR
     AD-Review --> IETF-LC
     IETF-LC --> IESG-Review
     IESG-Review --> RFC-Editor
+    RFC-Editor --> RFC    
 ```
 
 ## Completed Work
