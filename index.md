@@ -23,9 +23,11 @@ The group is currently working on the following specifications (in the GitHub re
 ```mermaid
 graph LR
     WG-Adopt --draft-00-03--> WGLC
-    WGLC --draft-04--> AD-Review((AD Review))
-    AD-Review --> IETF-LC
+    WGLC --draft-04--> AD-Review
+    AD-Review --> IETF-LC((IETF LC))
+    IETF-LC --> IANA-Review 
     IETF-LC --> IESG-Review
+    IANA-Review --> IESG-Review
     IESG-Review --> RFC-Editor
     RFC-Editor --> RFC
 ```
