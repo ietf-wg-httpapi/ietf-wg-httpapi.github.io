@@ -28,15 +28,14 @@ graph LR
     WG-Adopt --draft-03--> WGLC
     WGLC --draft-04--> AD-Review
     AD-Review --> IETF-LC
-    class IETF-LC lastIETF
     IETF-LC --> IANA-Review 
-    IETF-LC --draft-06--> IESG-Review((IESG-Review))
-    class IESG-Review current
+    IETF-LC --draft-06--> IESG-Review((IESG-Review))   
     IANA-Review --draft-04--> IESG-Review
-    IESG-Review --> RFC-Editor
+    IESG-Review --draft-07--> RFC-Editor
     RFC-Editor --> RFC
 
-
+    class IESG-Review lastIETF
+    class RFC-Editor current
 ```
 #### [YAML Media Type](https://datatracker.ietf.org/doc/draft-ietf-httpapi-yaml-mediatypes/) - _[repository](https://github.com/ietf-wg-httpapi/mediatypes)_
 ```mermaid
@@ -45,16 +44,16 @@ graph LR
     classDef lastIETF fill:pink
 
     WG-Adopt --draft-03--> WGLC
-    class WGLC lastIETF
     WGLC --draft-04--> AD-Review
     AD-Review --> IETF-LC
     IETF-LC --> IESG-Review((IESG-Review))
     IETF-LC --> IANA-Review((IANA-Review))
     IANA-Review --> IESG-Review
-    class IANA-Review current
     IESG-Review --> RFC-Editor
-    class IESG-Review current
-    RFC-Editor --> RFC
+    RFC-Editor --draft-09--> RFC
+    class IANA-Review lastIETF
+    class IESG-Review lastIETF
+    class RFC-Editor current
 ```
 #### [RateLimit Fields for HTTP](https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/) - _[repository](https://github.com/ietf-wg-httpapi/ratelimit-headers)_
 ```mermaid
@@ -62,7 +61,7 @@ graph LR
     classDef current fill:orange
     classDef lastIETF fill:pink
 
-    WG-Adopt((WG Adopt)) --draft-06--> WGLC
+    WG-Adopt((WG Adopt)) --draft-07--> WGLC
     class WG-Adopt current
     WGLC --> AD-Review
     AD-Review --> IETF-LC
@@ -106,7 +105,7 @@ graph LR
     classDef current fill:orange
     classDef lastIETF fill:pink
 
-    WG-Adopt((WG Adopt)) --draft-02--> WGLC
+    WG-Adopt((WG Adopt)) --draft-03--> WGLC
     class WG-Adopt current
     WGLC --> AD-Review
     AD-Review --> IETF-LC
@@ -122,7 +121,6 @@ graph LR
     classDef lastIETF fill:pink
 
     WG-Adopt((WG Adopt)) --draft-02--> WGLC
-    class WG-Adopt lastIETF
     WGLC --> AD-Review
     class AD-Review current
     AD-Review --> IETF-LC
