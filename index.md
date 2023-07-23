@@ -15,7 +15,7 @@ See our:
 * [Mailing list](https://www.ietf.org/mailman/listinfo/httpapi) - announcements, calls for consensus, and general discussion of our work
 * [Discussion repo](https://github.com/ietf-wg-httpapi/discussion/discussions) - alternative venue for discussing ideas about new specifications
 
-## Current and Upcoming Work
+## Current and Upcoming Work [Updated July 2023]
 
 The group is currently working on the following specifications (in the GitHub repository indicated). The step in the progress graph with an orange circle represents the current state of the document. The pink colour indicates the status at the last IETF meeting :
 
