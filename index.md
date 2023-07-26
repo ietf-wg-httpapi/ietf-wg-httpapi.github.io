@@ -29,10 +29,10 @@ graph LR
     WGLC --draft-04--> AD-Review
     AD-Review --> IETF-LC
     IETF-LC --> IANA-Review 
-    IETF-LC --draft-06--> IESG-Review((IESG-Review))   
+    IETF-LC --draft-06--> IESG-Review   
     IANA-Review --draft-04--> IESG-Review
     IESG-Review --draft-07--> RFC-Editor
-    RFC-Editor --> RFC
+    RFC-Editor((RFC-Editor)) --> RFC
 
     class IESG-Review lastIETF
     class RFC-Editor current
@@ -46,10 +46,10 @@ graph LR
     WG-Adopt --draft-03--> WGLC
     WGLC --draft-04--> AD-Review
     AD-Review --> IETF-LC
-    IETF-LC --> IESG-Review((IESG-Review))
-    IETF-LC --> IANA-Review((IANA-Review))
+    IETF-LC --> IESG-Review
+    IETF-LC --> IANA-Review
     IANA-Review --> IESG-Review
-    IESG-Review --> RFC-Editor
+    IESG-Review --> RFC-Editor((RFC-Editor))
     RFC-Editor --draft-09--> RFC
     class IANA-Review lastIETF
     class IESG-Review lastIETF
@@ -120,9 +120,10 @@ graph LR
     classDef current fill:orange
     classDef lastIETF fill:pink
 
-    WG-Adopt((WG Adopt)) --draft-02--> WGLC
-    WGLC --> AD-Review
+    WG-Adopt --draft-02--> WGLC
+    WGLC --> AD-Review((AD-Review))
     class AD-Review current
+    class WG-Adopt lastIETF
     AD-Review --> IETF-LC
     IETF-LC --> IESG-Review
     IESG-Review --> RFC-Editor
