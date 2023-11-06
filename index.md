@@ -15,28 +15,10 @@ See our:
 * [Mailing list](https://www.ietf.org/mailman/listinfo/httpapi) - announcements, calls for consensus, and general discussion of our work
 * [Discussion repo](https://github.com/ietf-wg-httpapi/discussion/discussions) - alternative venue for discussing ideas about new specifications
 
-## Current and Upcoming Work [Updated July 2023]
+## Current and Upcoming Work [Updated November 2023]
 
 The group is currently working on the following specifications (in the GitHub repository indicated). The step in the progress graph with an orange circle represents the current state of the document. The pink colour indicates the status at the last IETF meeting :
 
-#### [Problem Details for HTTP APIs](https://datatracker.ietf.org/doc/draft-ietf-httpapi-rfc7807bis/) - _[repository](https://github.com/ietf-wg-httpapi/rfc7807bis)_
-```mermaid
-graph LR
-    classDef current fill:orange
-    classDef lastIETF fill:pink
-
-    WG-Adopt --draft-03--> WGLC
-    WGLC --draft-04--> AD-Review
-    AD-Review --> IETF-LC
-    IETF-LC --> IANA-Review 
-    IETF-LC --draft-06--> IESG-Review   
-    IANA-Review --draft-04--> IESG-Review
-    IESG-Review --draft-07--> RFC-Editor
-    RFC-Editor((RFC-Editor)) --> RFC
-
-    class IESG-Review lastIETF
-    class RFC-Editor current
-```
 #### [YAML Media Type](https://datatracker.ietf.org/doc/draft-ietf-httpapi-yaml-mediatypes/) - _[repository](https://github.com/ietf-wg-httpapi/mediatypes)_
 ```mermaid
 graph LR
@@ -51,10 +33,45 @@ graph LR
     IANA-Review --> IESG-Review
     IESG-Review --> RFC-Editor((RFC-Editor))
     RFC-Editor --draft-09--> RFC
-    class IANA-Review lastIETF
-    class IESG-Review lastIETF
+    
     class RFC-Editor current
 ```
+
+#### [Link-Template HTTP Header Field](https://datatracker.ietf.org/doc/draft-ietf-httpapi-link-template/) - _[repository](https://github.com/ietf-wg-httpapi/link-template)_
+
+```mermaid
+graph LR
+    classDef current fill:orange
+    classDef lastIETF fill:pink
+
+    WG-Adopt --draft-02--> WGLC
+    WGLC --> AD-Review
+    AD-Review --> IETF-LC
+    IETF-LC --> IANA-Review
+    IANA-Review --> IESG-Review((IESG-Review))
+    IETF-LC --> IESG-Review
+    IESG-Review --> RFC-Editor
+    RFC-Editor --> RFC   
+
+    class IESG-Review current
+    class AD-Review lastIETF
+```
+
+#### [The Idempotency-Key HTTP Header Field](https://datatracker.ietf.org/doc/draft-ietf-httpapi-idempotency-key-header/) - _[repository](https://github.com/ietf-wg-httpapi/idempotency)_
+```mermaid
+graph LR
+    classDef current fill:orange
+    classDef lastIETF fill:pink
+
+    WG-Adopt((WG Adopt)) --draft-03--> WGLC
+    class WG-Adopt current
+    WGLC --> AD-Review
+    AD-Review --> IETF-LC
+    IETF-LC --> IESG-Review
+    IESG-Review --> RFC-Editor
+    RFC-Editor --> RFC
+```
+
 #### [RateLimit Fields for HTTP](https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/) - _[repository](https://github.com/ietf-wg-httpapi/ratelimit-headers)_
 ```mermaid
 graph LR
@@ -99,13 +116,13 @@ graph LR
     IESG-Review --> RFC-Editor
     RFC-Editor --> RFC
 ```
-#### [The Idempotency-Key HTTP Header Field](https://datatracker.ietf.org/doc/draft-ietf-httpapi-idempotency-key-header/) - _[repository](https://github.com/ietf-wg-httpapi/idempotency)_
+#### [API Catalog](https://datatracker.ietf.org/doc/draft-ietf-httpapi-api-catalog/)
 ```mermaid
 graph LR
     classDef current fill:orange
     classDef lastIETF fill:pink
 
-    WG-Adopt((WG Adopt)) --draft-03--> WGLC
+    WG-Adopt((WG Adopt)) --draft-00-03--> WGLC
     class WG-Adopt current
     WGLC --> AD-Review
     AD-Review --> IETF-LC
@@ -113,22 +130,54 @@ graph LR
     IESG-Review --> RFC-Editor
     RFC-Editor --> RFC
 ```
-#### [Link-Template HTTP Header Field](https://datatracker.ietf.org/doc/draft-ietf-httpapi-link-template/) - _[repository](https://github.com/ietf-wg-httpapi/link-template)_
 
+#### [Byte Range Patch](https://datatracker.ietf.org/doc/draft-ietf-httpapi-patch-byterange/)
 ```mermaid
 graph LR
     classDef current fill:orange
     classDef lastIETF fill:pink
 
-    WG-Adopt --draft-02--> WGLC
-    WGLC --> AD-Review((AD-Review))
-    class AD-Review current
-    class WG-Adopt lastIETF
+    WG-Adopt((WG Adopt)) --draft-00--> WGLC
+    class WG-Adopt current
+    WGLC --> AD-Review
     AD-Review --> IETF-LC
     IETF-LC --> IESG-Review
     IESG-Review --> RFC-Editor
-    RFC-Editor --> RFC    
+    RFC-Editor --> RFC
 ```
+
+#### [Authentication Link Relations](https://datatracker.ietf.org/doc/draft-ietf-httpapi-authentication-link/)
+```mermaid
+graph LR
+    classDef current fill:orange
+    classDef lastIETF fill:pink
+
+    WG-Adopt((WG Adopt)) --draft-00--> WGLC
+    class WG-Adopt current
+    WGLC --> AD-Review
+    AD-Review --> IETF-LC
+    IETF-LC --> IESG-Review
+    IESG-Review --> RFC-Editor
+    RFC-Editor --> RFC
+```
+
+
+#### [Link Hint](https://datatracker.ietf.org/doc/draft-ietf-httpapi-link-hint/)
+```mermaid
+graph LR
+    classDef current fill:orange
+    classDef lastIETF fill:pink
+
+    WG-Adopt((WG Adopt)) --draft-00-02--> WGLC
+    class WG-Adopt current
+    WGLC --> AD-Review
+    AD-Review --> IETF-LC
+    IETF-LC --> IESG-Review
+    IESG-Review --> RFC-Editor
+    RFC-Editor --> RFC
+```
+
+
 
 ## Completed Work
 
@@ -147,6 +196,25 @@ graph LR
     IESG-Review --> RFC-Editor
     RFC-Editor --> RFC((RFC9624))
     class RFC current
+```
+
+#### [Problem Details for HTTP APIs](https://datatracker.ietf.org/doc/draft-ietf-httpapi-rfc7807bis/) - _[repository](https://github.com/ietf-wg-httpapi/rfc7807bis)_
+```mermaid
+graph LR
+    classDef current fill:orange
+    classDef lastIETF fill:pink
+
+    WG-Adopt --draft-03--> WGLC
+    WGLC --draft-04--> AD-Review
+    AD-Review --> IETF-LC
+    IETF-LC --> IANA-Review 
+    IETF-LC --draft-06--> IESG-Review   
+    IANA-Review --draft-04--> IESG-Review
+    IESG-Review --draft-07--> RFC-Editor
+    RFC-Editor --> RFC((RFC 9457)) 
+
+    class RFC current
+    class RFC-Editor lastIETF
 ```
 
 
