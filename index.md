@@ -19,24 +19,6 @@ See our:
 
 The group is currently working on the following specifications (in the GitHub repository indicated). The step in the progress graph with an orange circle represents the current state of the document. The pink colour indicates the status at the last IETF meeting :
 
-#### [YAML Media Type](https://datatracker.ietf.org/doc/draft-ietf-httpapi-yaml-mediatypes/) - _[repository](https://github.com/ietf-wg-httpapi/mediatypes)_
-```mermaid
-graph LR
-    classDef current fill:orange
-    classDef lastIETF fill:pink
-
-    WG-Adopt --draft-03--> WGLC
-    WGLC --draft-04--> AD-Review
-    AD-Review --> IETF-LC
-    IETF-LC --> IESG-Review
-    IETF-LC --> IANA-Review
-    IANA-Review --> IESG-Review
-    IESG-Review --> RFC-Editor((RFC-Editor))
-    RFC-Editor --draft-09--> RFC
-    
-    class RFC-Editor current
-```
-
 #### [Link-Template HTTP Header Field](https://datatracker.ietf.org/doc/draft-ietf-httpapi-link-template/) - _[repository](https://github.com/ietf-wg-httpapi/link-template)_
 
 ```mermaid
@@ -49,12 +31,12 @@ graph LR
     AD-Review --> IETF-LC
     IETF-LC --> IANA-Review
     IANA-Review --> IESG-Review((IESG-Review))
-    IETF-LC --> IESG-Review
+    IETF-LC --draft-03--> IESG-Review
     IESG-Review --> RFC-Editor
     RFC-Editor --> RFC   
 
     class IESG-Review current
-    class AD-Review lastIETF
+
 ```
 
 #### [The Idempotency-Key HTTP Header Field](https://datatracker.ietf.org/doc/draft-ietf-httpapi-idempotency-key-header/) - _[repository](https://github.com/ietf-wg-httpapi/idempotency)_
@@ -63,7 +45,7 @@ graph LR
     classDef current fill:orange
     classDef lastIETF fill:pink
 
-    WG-Adopt((WG Adopt)) --draft-03--> WGLC
+    WG-Adopt((WG Adopt)) --draft-04--> WGLC
     class WG-Adopt current
     WGLC --> AD-Review
     AD-Review --> IETF-LC
@@ -93,7 +75,7 @@ graph LR
     classDef current fill:orange
     classDef lastIETF fill:pink
 
-    WG-Adopt((WG Adopt)) --draft-03--> WGLC
+    WG-Adopt((WG Adopt)) --draft-05--> WGLC
     class WG-Adopt current
     WGLC --> AD-Review
     AD-Review --> IETF-LC
@@ -108,7 +90,7 @@ graph LR
     classDef current fill:orange
     classDef lastIETF fill:pink
 
-    WG-Adopt((WG Adopt)) --draft-02--> WGLC
+    WG-Adopt((WG Adopt)) --draft-03--> WGLC
     class WG-Adopt current
     WGLC --> AD-Review
     AD-Review --> IETF-LC
@@ -122,7 +104,7 @@ graph LR
     classDef current fill:orange
     classDef lastIETF fill:pink
 
-    WG-Adopt((WG Adopt)) --draft-00-03--> WGLC
+    WG-Adopt((WG Adopt)) --draft-00-02--> WGLC
     class WG-Adopt current
     WGLC --> AD-Review
     AD-Review --> IETF-LC
@@ -137,7 +119,7 @@ graph LR
     classDef current fill:orange
     classDef lastIETF fill:pink
 
-    WG-Adopt((WG Adopt)) --draft-00--> WGLC
+    WG-Adopt((WG Adopt)) --draft-01--> WGLC
     class WG-Adopt current
     WGLC --> AD-Review
     AD-Review --> IETF-LC
@@ -168,7 +150,7 @@ graph LR
     classDef current fill:orange
     classDef lastIETF fill:pink
 
-    WG-Adopt((WG Adopt)) --draft-00-02--> WGLC
+    WG-Adopt((WG Adopt)) --draft-00-01--> WGLC
     class WG-Adopt current
     WGLC --> AD-Review
     AD-Review --> IETF-LC
@@ -214,7 +196,24 @@ graph LR
     RFC-Editor --> RFC((RFC 9457)) 
 
     class RFC current
+```
+#### [YAML Media Type](https://datatracker.ietf.org/doc/draft-ietf-httpapi-yaml-mediatypes/) - _[repository](https://github.com/ietf-wg-httpapi/mediatypes)_
+```mermaid
+graph LR
+    classDef current fill:orange
+    classDef lastIETF fill:pink
+
+    WG-Adopt --draft-03--> WGLC
+    WGLC --draft-04--> AD-Review
+    AD-Review --> IETF-LC
+    IETF-LC --> IESG-Review
+    IETF-LC --> IANA-Review
+    IANA-Review --> IESG-Review
+    IESG-Review --> RFC-Editor
+    RFC-Editor --draft-09-10--> RFC9512((RFC 9512))
+    
     class RFC-Editor lastIETF
+    class RFC9512 current
 ```
 
 
