@@ -143,7 +143,7 @@ graph LR
     AD-Review --> IETF-LC
     IETF-LC --> IESG-Review
     IESG-Review --draft-04-08--> RFC-Editor
-    RFC-Editor --> RFC9727
+    RFC-Editor --> RFC((RFC9727))
 
     class RFC current
 
